@@ -1,19 +1,11 @@
 import { Button } from "@/landing/components/ui/button";
 import { ArrowRight, Shield } from "lucide-react";
 import { motion } from "framer-motion";
-import { supabase } from "@/lib/supabaseClient";
-import { useNavigate } from "react-router-dom";
 
 const CTASection = () => {
-  const navigate = useNavigate();
 
   const handleDownloadApp = async () => {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session) {
-      navigate("/dashboard");
-    } else {
-      navigate("/auth");
-    }
+    console.log("Initiating app download...");
   };
 
   return (
