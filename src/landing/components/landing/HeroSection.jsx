@@ -8,7 +8,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleStartMonitoring = () => {
-    window.location.href = "https://app.drowsygaurd.space";
+    window.open("https://app.drowsygaurd.space", "_blank");
   };
 
   return (
@@ -123,7 +123,7 @@ const HeroSection = () => {
             variant="heroOutline"
             size="lg"
             className="text-base px-8"
-            onClick={handleStartMonitoring}
+            onClick={() => window.open("https://app.drowsygaurd.space", "_blank")}
           >
             Try Now
           </Button>

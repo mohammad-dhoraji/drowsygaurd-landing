@@ -10,7 +10,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleStartMonitoring = () => {
-    window.location.href = "app.drowsygaurd.space";
+    window.location.href = "https://app.drowsygaurd.space";
   };
   return (
     <motion.nav
