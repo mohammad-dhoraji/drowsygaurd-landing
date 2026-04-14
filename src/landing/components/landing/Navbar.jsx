@@ -10,7 +10,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleStartMonitoring = () => {
-    window.location.href = "https://drowsyguard.expo.app";
+    window.location.href = "app.drowsygaurd.space";
   };
   return (
     <motion.nav

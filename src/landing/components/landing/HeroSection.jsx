@@ -8,7 +8,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleStartMonitoring = () => {
-    window.location.href = "https://drowsyguard.expo.app";
+    window.location.href = "https://app.drowsygaurd.space";
   };
 
   return (
