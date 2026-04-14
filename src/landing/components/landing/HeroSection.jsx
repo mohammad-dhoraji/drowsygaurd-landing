@@ -107,7 +107,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button variant="hero" size="lg" className="text-base px-8">
+          <Button
+            variant="hero"
+            size="lg"
+            className="text-base px-8"
+            onClick={() =>
+              window.open(
+                "https://github.com/mohammad-dhoraji/drowsygaurd-landing/releases/download/v1.0.0/DrowsyGuardv1.0.0.apk",
+              )
+            }
+          >
             Get App <ArrowRight className="w-4 h-4 ml-1" />
           </Button>
           <Button

@@ -2,14 +2,12 @@ import { useState } from "react";
 import { Button } from "@/landing/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import icon from "../../assets/icon.svg";
 
 const navLinks = ["Home", "Features", "How It Works", "Dashboard", "Contact"];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navigate = useNavigate();
 
   const handleStartMonitoring = () => {
     window.location.href = "https://drowsyguard.expo.app";
@@ -85,7 +83,7 @@ const Navbar = () => {
                   variant="hero"
                   size="sm"
                   className="flex-1"
-                  onClick={handleStartMonitoring}
+                  onClick={() => {window.open("https://github.com/mohammad-dhoraji/drowsygaurd-landing/releases/download/v1.0.0/DrowsyGuardv1.0.0.apk", "_blank")}}
                 >
                   Get App
                 </Button>

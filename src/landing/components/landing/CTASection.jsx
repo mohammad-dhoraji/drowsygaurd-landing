@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const CTASection = () => {
 
   const handleDownloadApp = async () => {
-    console.log("Initiating app download...");
+    window.open("https://github.com/mohammad-dhoraji/drowsygaurd-landing/releases/download/v1.0.0/DrowsyGuardv1.0.0.apk");
   };
 
   return (
