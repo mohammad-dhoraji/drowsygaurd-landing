@@ -73,7 +73,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 glass rounded-full px-5 py-2 mb-8">
             <Shield className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">
-              AI-Powered Road Safety System
+              ML-Powered Road Safety System
             </span>
             <ArrowRight className="w-3 h-3 text-muted-foreground" />
           </div>
